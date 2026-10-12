@@ -1,0 +1,112 @@
+[
+  {
+    "id": "auth-403",
+    "text": "Customers are getting a 403 error when trying to access their accounts after yesterday's deployment.",
+    "expected": {
+      "category": "authentication",
+      "priority": "high",
+      "summary": "Users cannot access accounts",
+      "suggested_team": "backend",
+      "needs_human_review": true
+    }
+  },
+  {
+    "id": "double-charge",
+    "text": "A customer was charged twice for the October invoice. They want the duplicate payment refunded today.",
+    "expected": {
+      "category": "billing",
+      "priority": "high",
+      "summary": "Customer charged twice and wants a refund",
+      "suggested_team": "support",
+      "needs_human_review": true
+    }
+  },
+  {
+    "id": "title-typo",
+    "text": "The settings page says \"Acount\" instead of \"Account\" in the page title. Everything else works.",
+    "expected": {
+      "category": "bug",
+      "priority": "low",
+      "summary": "Typo in the settings page title",
+      "suggested_team": "frontend",
+      "needs_human_review": false
+    }
+  },
+  {
+    "id": "missing-role",
+    "text": "Our admin cannot grant the billing role to a teammate. The role is missing from the permissions list.",
+    "expected": {
+      "category": "access",
+      "priority": "medium",
+      "summary": "Admin cannot assign the billing role",
+      "suggested_team": "backend",
+      "needs_human_review": false
+    }
+  },
+  {
+    "id": "reset-email",
+    "text": "Password reset emails are not arriving for one customer. That person is locked out. Everyone else can log in.",
+    "expected": {
+      "category": "authentication",
+      "priority": "medium",
+      "summary": "One user is not receiving password reset email",
+      "suggested_team": "backend",
+      "needs_human_review": false
+    }
+  },
+  {
+    "id": "cancel-plan",
+    "text": "Please cancel our subscription at the end of the month and confirm we will not be billed again.",
+    "expected": {
+      "category": "billing",
+      "priority": "medium",
+      "summary": "Customer wants the subscription cancelled",
+      "suggested_team": "support",
+      "needs_human_review": true
+    }
+  },
+  {
+    "id": "blank-dashboard",
+    "text": "Since this morning's release, the dashboard chart is a blank white box for every customer we have tried.",
+    "expected": {
+      "category": "bug",
+      "priority": "high",
+      "summary": "Dashboard chart is blank for all customers",
+      "suggested_team": "frontend",
+      "needs_human_review": true
+    }
+  },
+  {
+    "id": "export-csv",
+    "text": "How do I export last month's invoices to CSV? I cannot find the button.",
+    "expected": {
+      "category": "other",
+      "priority": "low",
+      "summary": "Customer needs help exporting invoices",
+      "suggested_team": "support",
+      "needs_human_review": false
+    }
+  },
+  {
+    "id": "wrong-invoices",
+    "text": "A customer can see another company's invoices when they open the billing page. This started after the deploy.",
+    "expected": {
+      "category": "access",
+      "priority": "high",
+      "summary": "Customer can see another company's invoices",
+      "suggested_team": "backend",
+      "needs_human_review": true
+    }
+  },
+  {
+    "id": "blurry-logo",
+    "text": "The logo on the login page is blurry on retina screens. Login itself works.",
+    "expected": {
+      "category": "bug",
+      "priority": "low",
+      "summary": "Login page logo looks blurry",
+      "suggested_team": "frontend",
+      "needs_human_review": false
+    }
+  }
+]
